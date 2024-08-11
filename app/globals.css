@@ -1,3 +1,115 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* In your CSS file */
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100px;
+    height: 12px;
+    background: #ddd;
+    outline: none;
+    opacity: 1;
+    transition: opacity 0.2s;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 12px;
+    height: 35px;
+    background: #585858;
+    cursor: grab;
+    border-radius: 4px;
+}
+
+.slider::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    background: #585858;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.loadbtn {
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    background-color: #ffffff;
+    color: black;
+    width: 80px;
+    height: 29px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    z-index: 11;
+}
+
+
+.loadbtn:hover {
+    background: linear-gradient(to top left, #C95291, #5668EC);
+    color: white;
+    transition: background 0.7s, color 0.3s;
+}
+
+.abtbtn {
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    background-color: #ffffff;
+    color: black;
+    width: 80px;
+    height: 29px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    z-index: 11;
+}
+
+.abtbtn:hover {
+    background: linear-gradient(to top left, #5668EC, #C95291);
+    color: white;
+    transition: background 0.7s, color 0.3s;
+}
+
+.abtcard {
+    background-color: #3b3b3b2f;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.116);
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    backdrop-filter: blur(1px);;
+}
+
+.abtcard::hover {
+    background-color: #3b3b3b;
+    transition: background-color 0.5s;
+}
+
+.icon-hover {
+    color: white;
+    transition: all 0.3s;
+  }
+  
+  .icon-hover:hover {
+    color: #C95291;
+    transition: color 0.3s; /* Make the text transparent to reveal the gradient */
+  }
+
+  .noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+  }
+
+  .dropshadow {
+    text-shadow: 0 0 20px #00ff99;
+    transition: box-shadow 0.3s ease-in-out;
+  }

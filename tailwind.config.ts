@@ -11,6 +11,10 @@ const config: Config = {
       colors: {
         "black-100": "#000319",
       },
+      animation: {
+        "spin-slow": "spin 10s linear infinite",
+        'spin-slow-paused': 'spin-slow 10s linear infinite paused',
+      },
     },
   },
   plugins: [],
