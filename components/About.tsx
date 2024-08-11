@@ -22,7 +22,7 @@ const About = () => {
           <p className="text-center text-white mt-5">
             This website is currently under development! Please check back soon!
             <br />
-            If you're looking for my socials, you can find them below.
+            If you&apos;re looking for my socials, you can find them below.
           </p>
           {/* Align the socials in the center as a grid */}
           <div className="flex justify-center mt-16">
