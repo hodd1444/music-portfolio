@@ -5,7 +5,7 @@ import Link from "next/link";
 import { ShootingStars } from "./ui/shooting-stars";
 import { StarsBackground } from "./ui/stars-background";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faXTwitter, faGithub, faInstagram, faTiktok } from '@fortawesome/free-brands-svg-icons';
+import { faXTwitter, faGithub, faInstagram, faTiktok, faSoundcloud } from '@fortawesome/free-brands-svg-icons';
 
 
 
@@ -31,6 +31,9 @@ const About = () => {
             </a>
             <a href="https://www.instagram.com/hoddmusic" className="icon-hover">
                 <FontAwesomeIcon icon={faInstagram} size="3x" className="mx-5" />
+            </a>
+            <a href="https://www.soundcloud.com/hoddmusic" className="icon-hover">
+                <FontAwesomeIcon icon={faSoundcloud} size="3x" className="mx-5" />
             </a>
             <a href="https://www.tiktok.com/@hoddmusic" className="icon-hover">
                 <FontAwesomeIcon icon={faTiktok} size="3x" className="mx-5" />
