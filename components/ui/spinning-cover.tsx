@@ -23,7 +23,7 @@ export const SpinningCover: React.FC<SpinningCoverProps> = (songIsPlaying) => {
             <img
                 src={getCurrentSongCover().src}
                 alt="Cover"
-                className="noselect w-[290px] h-auto animate-spin-slow rounded-full"
+                className="noselect w-[25.4%] h-auto animate-spin-slow rounded-full"
                 draggable="false"
                 style={{
                     animationFillMode: 'forwards',

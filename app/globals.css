@@ -6,10 +6,10 @@
 .slider {
     -webkit-appearance: none;
     appearance: none;
-    width: 100px;
-    height: 12px;
     background: #ddd;
     outline: none;
+    width: 100%;
+    height: 1.32vh;
     opacity: 1;
     transition: opacity 0.2s;
     cursor: pointer;
@@ -19,8 +19,8 @@
 .slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
-    width: 12px;
-    height: 35px;
+    width: 0.68vw; /* Adjusted width to scale with viewport width */
+    height: 4vh; /* Adjusted height to scale with viewport height */
     background: #585858;
     cursor: grab;
     border-radius: 4px;
@@ -37,12 +37,11 @@
 .loadbtn {
     font-family: 'Inter', sans-serif;
     font-weight: 900;
+    font-size: calc(0.9vw + 0.3vh);
     background-color: #ffffff;
     color: black;
-    width: 80px;
-    height: 29px;
     border: none;
-    border-radius: 7px;
+    border-radius: 0.5vw;
     cursor: pointer;
     z-index: 11;
 }
@@ -57,12 +56,11 @@
 .abtbtn {
     font-family: 'Inter', sans-serif;
     font-weight: 900;
+    font-size: calc(0.9vw + 0.3vh);
     background-color: #ffffff;
     color: black;
-    width: 80px;
-    height: 29px;
     border: none;
-    border-radius: 7px;
+    border-radius: 0.5vw;
     cursor: pointer;
     z-index: 11;
 }

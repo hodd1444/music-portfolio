@@ -55,74 +55,75 @@ const Hero = () => {
             <StarsBackground />
             <LightingSpheres />
             <div className="flex items-center justify-center h-screen ">
-                <div className="absolute z-10 align-middle grid grid-cols-2 gap-[14px] justify-between top-[20.9%] ">
-                    <button className="loadbtn">
-                        LOAD
-                    </button>
-                    <Link href="/about">
-                        <button className="abtbtn">
-                            ABOUT
-                        </button>
-                    </Link>                        
-                    
-                </div>
-                <div
-                    className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-[100%] z-10 w-[165px] h-auto">
-                    <img
-                        src={hodd.src}
-                        alt="Logo"
-                        className="noselect w-full h-full"
-                        draggable="false"
-                    />
-                    
-                    <div className="absolute inset-0 bg-gradient-to-tl from-[#C95291] to-[#5668EC]"
-                    style={{
-                        WebkitMaskImage: `url(${hodd.src})`,
-                        WebkitMaskRepeat: 'no-repeat',
-                        WebkitMaskSize: 'cover',
-                        WebkitMaskPosition: 'center',
-                        maskImage: `url(${hodd.src})`,
-                        maskRepeat: 'no-repeat',
-                        maskSize: 'cover',
-                        maskPosition: 'center',
-                      }}
-                    >
-
+                <div className="relative">
+                    <div className="absolute w-[15%] h-[5%] z-10 top-[9%] left-[42.5%]">
+                        <div className="flex justify-between items-center w-full h-full">
+                            <button className="loadbtn w-[48%] h-full">
+                                LOAD
+                            </button>
+                            <button className="abtbtn w-[48%] h-full">
+                                <Link href="/about">ABOUT</Link>
+                            </button>
                         </div>
-                </div>
-                <div className="absolute top-[28%] left-[22.19%] z-10">
-                    <SpinningCover songIsPlaying={isPlaying.valueOf()} />
-                </div>
-                <button className="absolute align-middle justify-center z-10 left-[22.4%] top-[71%]" onClick={() => handlePlayPause()}><img 
-                    src={playpause.src}
-                    alt="playpause"
-                    draggable="false"
-                />
-                </button>
-                <div className="absolute top-[61.7%] left-[44.8%] z-10">
-                    <div className="relative">
+                                               
+                        
+                    </div>
+                    <div
+                        className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-[90%] z-10 w-[15%] h-auto">
+                        <img
+                            src={hodd.src}
+                            alt="Logo"
+                            className="noselect w-full h-full"
+                            draggable="false"
+                        />
+                        
+                        <div className="absolute inset-0 bg-gradient-to-tl from-[#C95291] to-[#5668EC]"
+                        style={{
+                            WebkitMaskImage: `url(${hodd.src})`,
+                            WebkitMaskRepeat: 'no-repeat',
+                            WebkitMaskSize: 'cover',
+                            WebkitMaskPosition: 'center',
+                            maskImage: `url(${hodd.src})`,
+                            maskRepeat: 'no-repeat',
+                            maskSize: 'cover',
+                            maskPosition: 'center',
+                        }}
+                        >
+
+                            </div>
+                    </div>
+                    <div className="absolute top-[17.25%] left-[7.55%] z-10">
+                        <SpinningCover songIsPlaying={isPlaying.valueOf()} />
+                    </div>
+                    <button className="absolute w-[4.5%] h-auto z-10 left-[8%] top-[81.6%]" onClick={() => handlePlayPause()}><img 
+                        src={playpause.src}
+                        alt="playpause"
+                        draggable="false"
+                        className="noselect w-full h-full"
+                    />
+                    </button>
+                    <div className="absolute w-[8.7%] h-auto top-[67.5%] left-[42.6%] z-10">
                         <input
                             type="range"
                             min="0"
                             max="100"
                             value={volume}
                             onChange={handleVolumeChange}
-                            className="slider" // Tailwind or custom styling for the slider
+                            className="slider w-full h-auto" // Tailwind or custom styling for the slider
                             style={{
-                            transform: "rotate(-90deg)", // Rotate the slider to match the UI
-                            width: "100px", // Adjust width as needed
-                            // Customize further to match the design
+                                transform: "rotate(-90deg)",
                             }}
                         />
                     </div>
+                    <audio ref={audioRef} src="/audio/fallinlove.mp3" />
+                    <img
+                        src={Main.src}
+                        alt="Main"
+                        className="mx-auto backdrop-blur-lg noselect dropshadow" 
+                        draggable="false"
+                    />
                 </div>
-                <audio ref={audioRef} src="/audio/fallinlove.mp3" />
-                <img
-                    src={Main.src}
-                    alt="Main"
-                    className="mx-auto backdrop-blur-lg noselect dropshadow" 
-                    draggable="false"
-                />
+                
                 <button 
                     className="
                     absolute 
