@@ -54,8 +54,8 @@ const Hero = () => {
             <ShootingStars />
             <StarsBackground />
             <LightingSpheres />
-            <div className="flex items-center justify-center h-screen ">
-                <div className="relative">
+            <div className="flex items-center justify-center h-[calc(100dvh)]">
+                <div className="relative hidden md:block">
                     <div className="absolute w-[15%] h-[5%] z-10 top-[9%] left-[42.5%]">
                         <div className="flex justify-between items-center w-full h-full">
                             <button className="loadbtn w-[48%] h-full">
@@ -93,7 +93,9 @@ const Hero = () => {
                             </div>
                     </div>
                     <div className="absolute top-[17.25%] left-[7.55%] z-10">
-                        <SpinningCover songIsPlaying={isPlaying.valueOf()} />
+                        <Link href="https://soundcloud.com/hoddmusic/fall-in-love" className="cursor-pointer">
+                            <SpinningCover songIsPlaying={isPlaying.valueOf()} />
+                        </Link>
                     </div>
                     <button className="absolute w-[4.5%] h-auto z-10 left-[8%] top-[81.6%]" onClick={() => handlePlayPause()}><img 
                         src={playpause.src}
@@ -124,6 +126,23 @@ const Hero = () => {
                     />
                 </div>
                 
+                
+                <div className="relative flex justify-center w-[85%] items-center flex-col overflow-hidden mx-auto sm:px-10 md:hidden"
+                style={{
+                    borderRadius: "20px",
+                    boxShadow: "10px 10px 30px 10px rgba(5, 8, 36, 0.5), -3px -3px 40px 1px rgba(93, 95, 112, 0.2)",
+                }}>
+                    <div className="mobile-container">
+                        <h1 className="">Hi! My Name Is Hodd</h1>
+                        <p>Below you can listen to my latest Track <Link href="https://soundcloud.com/hoddmusic/fall-in-love" className="link-mb">Fall In Love</Link></p>
+                        <SpinningCover songIsPlaying={isPlaying.valueOf()}/>
+                        <button className="mobile-btn">
+                            <Link href="/about">About Me</Link>
+                        </button>
+                    </div>
+                    
+                </div>
+
                 <button 
                     className="
                     absolute 
@@ -133,7 +152,7 @@ const Hero = () => {
                     hover:px-5 hover:py-3 hover:bottom-[4.5%] hover:transition-all hover:duration-500
                     hover:bg-gradient-to-tl hover:to-[#C95291] hover:from-[#5668EC]"
                     onClick={() => handlePlayPause()}
-                >Listen</button>
+                >{isPlaying ? "Pause" : "Listen"}</button>
                 
             </div>
         </div>

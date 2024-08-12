@@ -19,7 +19,7 @@ const About = () => {
           <h1 className="text-5xl font-bold text-center text-white">
             About Me
           </h1>
-          <p className="text-center text-white mt-5">
+          <p className="text-center text-white mt-10">
             This website is currently under development! Please check back soon!
             <br />
             If you&apos;re looking for my socials, you can find them below.

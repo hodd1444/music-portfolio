@@ -9,13 +9,6 @@ function getCurrentSongCover() {
     return fallinlove;
 }
 
-function getSpin(isPlaying: boolean) {
-    return isPlaying 
-    ? "w-[290px] h-auto animate-spin-slow rounded-full" 
-    : "w-[290px] h-auto rounded-full";
-
-}
-
 export const SpinningCover: React.FC<SpinningCoverProps> = (songIsPlaying) => {
     // return a spinning round image of an album cover
     return (
