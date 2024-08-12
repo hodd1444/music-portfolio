@@ -134,7 +134,8 @@ const Hero = () => {
                 }}>
                     <div className="mobile-container">
                         <h1 className="">Hi! My Name Is Hodd</h1>
-                        <p>Below you can listen to my latest Track <Link href="https://soundcloud.com/hoddmusic/fall-in-love" className="link-mb">Fall In Love</Link></p>
+                        <p>Below you can listen to my latest Track</p>
+                        <Link href="https://soundcloud.com/hoddmusic/fall-in-love" className="link-mb">Fall In Love</Link>
                         <SpinningCover songIsPlaying={isPlaying.valueOf()}/>
                         <button className="mobile-btn">
                             <Link href="/about">About Me</Link>

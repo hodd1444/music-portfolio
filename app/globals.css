@@ -152,7 +152,6 @@
   .mobile-container p {
     font-size: 0.8rem;
     font-weight: 300;
-    margin-bottom: 30px;
   }
 
   .link-mb {
@@ -161,9 +160,10 @@
     font-size: 0.8rem;
     font-weight: 500;
     transition: all 0.7s;
-    margin-left: 5px;
     padding: 5px 10px;
     border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
   }
 
   .link-mb:hover {
