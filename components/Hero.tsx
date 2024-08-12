@@ -54,7 +54,7 @@ const Hero = () => {
             <ShootingStars />
             <StarsBackground />
             <LightingSpheres />
-            <div className="flex items-center justify-center h-[calc(100dvh)]">
+            <div className="flex items-center justify-center h-[calc(100dvh)] overflow-hidden">
                 <div className="relative hidden md:block">
                     <div className="absolute w-[15%] h-[5%] z-10 top-[9%] left-[42.5%]">
                         <div className="flex justify-between items-center w-full h-full">

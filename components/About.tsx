@@ -14,7 +14,7 @@ const About = () => {
     <div>
       <ShootingStars />
       <StarsBackground />
-      <div className="flex items-center justify-center h-[calc(100dvh)]">
+      <div className="flex items-center justify-center h-[calc(100dvh)] overflow-hidden">
         <div className="abtcard">
           <h1 className="text-5xl font-bold text-center text-white">
             About Me
