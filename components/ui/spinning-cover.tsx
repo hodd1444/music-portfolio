@@ -11,8 +11,8 @@ function getCurrentSongCover() {
 
 function getSpin(isPlaying: boolean) {
     return isPlaying 
-    ? "w-[290px] h-auto animate-spin-slow rounded-full mx-auto" 
-    : "w-[290px] h-auto rounded-full mx-auto";
+    ? "w-[290px] h-auto animate-spin-slow rounded-full" 
+    : "w-[290px] h-auto rounded-full";
 
 }
 
@@ -23,7 +23,7 @@ export const SpinningCover: React.FC<SpinningCoverProps> = (songIsPlaying) => {
             <img
                 src={getCurrentSongCover().src}
                 alt="Cover"
-                className="noselect w-[290px] h-auto animate-spin-slow rounded-full mx-auto"
+                className="noselect w-[290px] h-auto animate-spin-slow rounded-full"
                 draggable="false"
                 style={{
                     animationFillMode: 'forwards',
