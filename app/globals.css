@@ -92,11 +92,6 @@
     backdrop-filter: blur(1px);;
 }
 
-.abtcard:hover {
-    background-color: #3b3b3b;
-    transition: background-color 0.5s;
-}
-
 .icon-hover {
     color: #ffffff;
     transition: all 0.3s;
